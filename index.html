@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mashiro</title>
+
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #fffef6;
+				width: 100vw;
+				height: 100vh;
+				overflow: hidden;
+			}
+
+			body a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			body img {
+				opacity: 0;
+				max-width: 150px;
+				max-height: 150px;
+				aspect-ratio: 1 / 1;
+				transition: opacity 1s ease;
+			}
+
+			body img.show {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://mi.nekozuki.me/@mashiro">
+			<img src="images/mashiro_bg_512.png" alt="mashiro" />
+		</a>
+	</body>
+
+	<script>
+		window.onload = () => {
+			const img = document.querySelector('img').classList.add('show');
+			console.log('test');
+		};
+	</script>
+</html>
